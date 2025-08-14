@@ -1,0 +1,8 @@
+---
+ - name: install apache
+   hosts: webservers
+   tasks:
+     - command: apt update
+     - apt:
+        name: apache2
+        state: present
